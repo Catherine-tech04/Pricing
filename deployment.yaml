@@ -4,7 +4,7 @@ metadata:
   name: java-app
 spec:
   replicas: 2
-  selector:c
+  selector:
     matchLabels:
       app: java-app
   template:
