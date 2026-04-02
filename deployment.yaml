@@ -4,7 +4,7 @@ metadata:
   name: java-app
 spec:
   replicas: 2
-  selector:
+  selector:c
     matchLabels:
       app: java-app
   template:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: catherinemaria/java-app:latest
+        image: catherinemaria/fraud-detection:latest
         ports:
         - containerPort: 8080
 ---
