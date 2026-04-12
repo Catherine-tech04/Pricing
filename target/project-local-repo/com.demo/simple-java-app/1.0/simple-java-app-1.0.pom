@@ -9,7 +9,6 @@
     <artifactId>simple-java-app</artifactId>
     <version>1.0</version>
 
-    <!-- ✅ Dependencies -->
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -19,11 +18,9 @@
         </dependency>
     </dependencies>
 
-    <!-- ✅ Build -->
     <build>
         <plugins>
 
-            <!-- Java version -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -33,8 +30,7 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-
-            <!-- 🔥 REQUIRED for JUnit 5 -->
+        
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
