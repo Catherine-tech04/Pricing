@@ -3,12 +3,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class AppTest {
 
+
     // ================================
-    // 1. PRICING TEST
+    // 2. LOAN TEST
     // ================================
     @Test
-    void testPricing() {
-        assertEquals(118.0, App.calculatePrice(100, true), 0.001);
-        assertEquals(90.0, App.calculatePrice(100, false), 0.001);
+    void testLoan() {
+        assertEquals(50000, App.checkEligibility(50000, true));
+        assertEquals(0, App.checkEligibility(50000, false));
     }
+
 }
